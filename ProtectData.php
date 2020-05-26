@@ -2,15 +2,12 @@
 
 namespace vasadibt\protector;
 
-use Psr\Container\ContainerInterface;
-use vasadibt\canvas\helpers\Html;
 use Yii;
 use yii\base\BootstrapInterface;
 use yii\base\Component;
 use yii\di\Instance;
-use yii\helpers\ArrayHelper;
+use yii\helpers\Html;
 use yii\helpers\Json;
-use yii\helpers\Url;
 use yii\web\Application as WebApplication;
 use yii\web\Response;
 use yii\web\View;
@@ -50,7 +47,7 @@ class ProtectData extends Component implements BootstrapInterface
     /**
      * @var bool
      */
-    public $debug = true;
+    public $debug = false;
     /**
      * @var string
      */
