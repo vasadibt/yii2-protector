@@ -1,0 +1,21 @@
+{
+    "name": "vasadibt/yii2-protector",
+    "description": "Hide emails and phone numbers from spam robots",
+    "type": "yii2-extension",
+    "keywords": ["yii2","extension","spam protector"],
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Tamás Vasadi-Balogh",
+            "email": "vasadibt@gmail.com"
+        }
+    ],
+    "require": {
+        "yiisoft/yii2": "~2.0.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "vasadibt\\protector\\": ""
+        }
+    }
+}
