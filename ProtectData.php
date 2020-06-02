@@ -121,7 +121,7 @@ class ProtectData extends Component implements BootstrapInterface
         $this->view->on(View::EVENT_END_BODY, [$this, 'scriptBlock']);
 
         // register dynamic values to javascript and add content position
-        $this->app->on(WebApplication::EVENT_AFTER_REQUEST, [$this, 'processResponseContent']);
+        $this->response->on(Response::EVENT_BEFORE_SEND, [$this, 'processResponseContent']);
     }
 
     /**
