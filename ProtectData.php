@@ -147,6 +147,10 @@ class ProtectData extends Component implements BootstrapInterface
         $content = $this->getContent();
         $registeredItems = [];
 
+        if($content === null){
+            return;
+        }
+        
         $this->registerItems($content, $registeredItems);
 
         if ($this->enableAutoDetect) {
